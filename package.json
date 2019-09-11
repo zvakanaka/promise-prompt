@@ -1,14 +1,14 @@
 {
   "name": "promise-prompt",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Prompt for standard input",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "node test/index.test.js",
-    "test:watch": "npm run test; date; chokidar './*.js' './test/*.js' -c 'if [ \"{event}\" = \"change\" ]; then npm run test; date; fi;'"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/zvakanaka/promise-prompt#readme",
   "devDependencies": {
-    "chokidar-cli": "^1.2.2"
+    "jest": "^23.6.0"
   }
 }

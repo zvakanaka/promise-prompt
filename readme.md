@@ -18,7 +18,7 @@ const prompt = require('promise-prompt');
   const name = await prompt('What is your name? ');
 
   if (name === 'Adam') console.log('Me too!');
-  else console.log('What a beautiful name!?');
+  else console.log('What a beautiful name!');
 })();
 ```
 
@@ -26,7 +26,7 @@ Callback:
 ```js
 const prompt = require('promise-prompt');
 
-prompt('What is your favorite color?', function (answer) {
+prompt('What is your favorite color? ', function (answer) {
   if (answer === 'all of them') console.log('Me too!');
   else console.log('Good one!');
 });
