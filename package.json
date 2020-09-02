@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/zvakanaka/promise-prompt#readme",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^26.4.2"
   }
 }
